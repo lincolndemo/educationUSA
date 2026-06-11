@@ -3,17 +3,16 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { cn } from '@/lib/utils'
+import { Menu } from 'lucide-react'
 
-const links = [
+const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/resources', label: 'Resources' },
   { href: '/dashboard', label: 'Dashboard' },
-  { href: '/learning', label: 'Learning Centre' },
+  { href: '/learning', label: 'Learning' },
   { href: '/assessments', label: 'Assessments' },
   { href: '/profile', label: 'Profile' },
   { href: '/contact', label: 'Contact' },
@@ -22,75 +21,90 @@ const links = [
 export default function Navbar() {
   const pathname = usePathname()
   const [open, setOpen] = React.useState(false)
-  React.useEffect(() => { setOpen(false) }, [pathname])
+  const [scrolled, setScrolled] = React.useState(false)
+
+  React.useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handler, { passive: true })
+    return () => window.removeEventListener('scroll', handler)
+  }, [])
+
+  React.useEffect(() => {
+    setOpen(false)
+  }, [pathname])
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-3">
+      <nav
+        className={`w-full max-w-5xl flex items-center justify-between px-5 py-3 rounded-2xl transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-xl shadow-lg shadow-gray-200/60 border border-gray-100'
+            : 'bg-white/80 backdrop-blur-md border border-white/60 shadow-md shadow-gray-100/40'
+        }`}
+      >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex gap-0.5">
-            <div className="w-2.5 h-5 bg-brand-blue rounded-sm" />
-            <div className="w-2.5 h-5 bg-brand-red rounded-sm" />
-            <div className="w-2.5 h-5 bg-brand-green rounded-sm" />
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+          <div className="flex flex-col gap-0.5">
+            <div className="w-5 h-1.5 rounded-sm bg-brand-blue" />
+            <div className="w-5 h-1.5 rounded-sm bg-brand-red" />
+            <div className="w-5 h-1.5 rounded-sm bg-brand-green" />
           </div>
-          <span className="font-bold text-brand-blue text-sm leading-tight hidden sm:block">
+          <span className="text-sm font-bold text-gray-900 leading-tight">
             EducationUSA<br />
-            <span className="text-gray-500 font-normal text-xs">Scholars Portal</span>
+            <span className="text-xs font-normal text-gray-500">Scholars Portal</span>
           </span>
-          <span className="font-bold text-brand-blue text-sm sm:hidden">Scholars Portal</span>
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
-                pathname === link.href
-                  ? 'text-brand-blue bg-blue-50'
-                  : 'text-gray-600 hover:text-brand-red hover:bg-gray-50'
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Desktop nav */}
+        <div className="hidden lg:flex items-center gap-1">
+          {navLinks.map((link) => {
+            const active = pathname === link.href
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors duration-150 ${
+                  active
+                    ? 'bg-brand-blue text-white'
+                    : 'text-gray-600 hover:text-brand-blue hover:bg-blue-50'
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
+        </div>
 
-        {/* Mobile Nav */}
+        {/* Mobile hamburger */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger
-            render={
-              <Button variant="ghost" size="icon" className="lg:hidden" />
-            }
-          >
+          <SheetTrigger render={<Button variant="ghost" size="icon" className="lg:hidden" />}>
             <Menu className="h-5 w-5" />
           </SheetTrigger>
-          <SheetContent side="right" className="w-64">
+          <SheetContent side="right" className="w-72">
             <SheetHeader>
-              <SheetTitle className="sr-only">Main Navigation</SheetTitle>
+              <SheetTitle className="text-left">Navigation</SheetTitle>
             </SheetHeader>
-            <nav className="flex flex-col gap-1 mt-6">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    'px-4 py-2.5 rounded-md text-sm font-medium transition-colors',
-                    pathname === link.href
-                      ? 'text-brand-blue bg-blue-50'
-                      : 'text-gray-700 hover:text-brand-red hover:bg-gray-50'
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
+            <div className="flex flex-col gap-1 mt-6">
+              {navLinks.map((link) => {
+                const active = pathname === link.href
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                      active
+                        ? 'bg-brand-blue text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
+            </div>
           </SheetContent>
         </Sheet>
-      </div>
+      </nav>
     </header>
   )
 }

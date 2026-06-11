@@ -1,29 +1,44 @@
 const steps = [
-  { number: 1, title: 'Apply', description: 'Submit your application through the national portal.' },
-  { number: 2, title: 'Get Selected', description: 'Top applicants are selected by a national review panel.' },
-  { number: 3, title: 'Complete Training', description: 'Access self-paced learning, workshops, and advising.' },
-  { number: 4, title: 'Apply to U.S. Universities', description: 'Submit applications with full EducationUSA support.' },
-  { number: 5, title: 'Begin Your Journey', description: 'Travel to the U.S. and start your academic programme.' },
+  { n: '01', title: 'Apply', desc: 'Submit your application to the EducationUSA Scholars Programme.' },
+  { n: '02', title: 'Get Selected', desc: 'Top candidates are selected based on academic merit and potential.' },
+  { n: '03', title: 'Complete Training', desc: 'Attend intensive AI literacy and admissions preparation workshops.' },
+  { n: '04', title: 'Apply to U.S. Universities', desc: 'Submit applications to leading American universities with full guidance.' },
+  { n: '05', title: 'Begin Your Journey', desc: 'Travel to the U.S., start your degree, and represent Nigeria.' },
 ]
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="container">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">How the Programme Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {steps.map((step, i) => (
-            <div key={step.number} className="relative flex flex-col items-center text-center">
-              <div className="w-12 h-12 rounded-full bg-brand-blue text-white font-bold text-lg flex items-center justify-center mb-3 z-10">
-                {step.number}
+    <section className="py-24 px-4 bg-gray-50">
+      <div className="container max-w-5xl mx-auto">
+        <div className="text-center mb-14">
+          <p className="text-brand-blue text-sm font-semibold tracking-widest uppercase mb-3">The Process</p>
+          <h2 className="text-3xl font-bold text-gray-900">How It Works</h2>
+        </div>
+
+        <div className="relative">
+          {/* Connector line (desktop) */}
+          <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-brand-blue via-brand-red to-brand-green" />
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+            {steps.map((step, i) => (
+              <div
+                key={step.n}
+                className={`animate-fade-up text-center md:text-left stagger-${i + 1}`}
+              >
+                <div className={`w-16 h-16 mx-auto md:mx-0 rounded-2xl flex items-center justify-center text-xl font-bold mb-4 shadow-lg
+                  ${i === 0 ? 'bg-brand-blue text-white shadow-blue-200' :
+                    i === 1 ? 'bg-brand-red text-white shadow-red-200' :
+                    i === 2 ? 'bg-brand-green text-white shadow-green-200' :
+                    i === 3 ? 'bg-brand-blue text-white shadow-blue-200' :
+                    'bg-brand-red text-white shadow-red-200'}`}
+                >
+                  {step.n}
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">{step.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{step.desc}</p>
               </div>
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-0.5 bg-blue-200" />
-              )}
-              <p className="font-semibold text-gray-800 text-sm mb-1">{step.title}</p>
-              <p className="text-xs text-gray-500 leading-relaxed">{step.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
