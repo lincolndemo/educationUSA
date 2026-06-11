@@ -1,0 +1,26 @@
+{
+  "name": "Amina Hassan",
+  "cohort": "2026 Scholars",
+  "state": "Lagos",
+  "school": "Federal Government College, Lagos",
+  "intendedMajor": "Computer Science",
+  "intendedDegree": "Bachelor of Science",
+  "careerGoal": "AI Research Scientist",
+  "progress": [
+    { "topic": "U.S. Admissions", "percent": 100 },
+    { "topic": "Scholarship Search", "percent": 80 },
+    { "topic": "Visa Preparation", "percent": 65 },
+    { "topic": "Personal Statement Writing", "percent": 90 }
+  ],
+  "applicationStatus": [
+    { "step": "SAT Preparation", "status": "Completed" },
+    { "step": "Personal Statement", "status": "Completed" },
+    { "step": "University Applications", "status": "In Progress" },
+    { "step": "Visa Preparation", "status": "Pending" }
+  ],
+  "upcomingActivities": [
+    { "title": "U.S. Admissions Workshop", "date": "June 20, 2026", "type": "Workshop" },
+    { "title": "Scholarship Search Webinar", "date": "June 27, 2026", "type": "Webinar" },
+    { "title": "Visa Orientation Session", "date": "July 5, 2026", "type": "Orientation" }
+  ]
+}

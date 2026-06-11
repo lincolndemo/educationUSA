@@ -1,0 +1,72 @@
+[
+  {
+    "id": "r1",
+    "title": "U.S. Admissions Handbook",
+    "category": "admissions",
+    "description": "Comprehensive guide to navigating U.S. university admissions, from choosing schools to submitting applications.",
+    "pdfFile": "us-admissions-handbook.pdf"
+  },
+  {
+    "id": "r2",
+    "title": "University Search Guide",
+    "category": "admissions",
+    "description": "How to research and shortlist the right U.S. universities for your academic goals and budget.",
+    "pdfFile": "university-search-guide.pdf"
+  },
+  {
+    "id": "r3",
+    "title": "Personal Statement Workbook",
+    "category": "admissions",
+    "description": "A practical workbook with prompts, examples, and exercises to help you write a compelling personal statement.",
+    "pdfFile": "personal-statement-workbook.pdf"
+  },
+  {
+    "id": "r4",
+    "title": "Academic Profile Builder",
+    "category": "admissions",
+    "description": "How to build a strong academic profile through extracurriculars, research, leadership, and community engagement.",
+    "pdfFile": "academic-profile-builder.pdf"
+  },
+  {
+    "id": "r5",
+    "title": "Finding Scholarships for International Students",
+    "category": "scholarships",
+    "description": "A curated list of scholarships available to Nigerian and African students applying to U.S. institutions.",
+    "pdfFile": "finding-scholarships.pdf"
+  },
+  {
+    "id": "r6",
+    "title": "Financial Aid Strategies",
+    "category": "scholarships",
+    "description": "Strategies to maximise financial aid, including merit awards, need-based aid, and external funding.",
+    "pdfFile": "financial-aid-strategies.pdf"
+  },
+  {
+    "id": "r7",
+    "title": "Student Visa Guide",
+    "category": "visa",
+    "description": "Step-by-step instructions for applying for and obtaining an F-1 student visa to study in the United States.",
+    "pdfFile": "student-visa-guide.pdf"
+  },
+  {
+    "id": "r8",
+    "title": "Pre-Departure Checklist",
+    "category": "visa",
+    "description": "Everything you need to prepare before departing Nigeria — documents, finances, packing, and orientation.",
+    "pdfFile": "pre-departure-checklist.pdf"
+  },
+  {
+    "id": "r9",
+    "title": "AI Career Pathways",
+    "category": "career",
+    "description": "Explore career trajectories in artificial intelligence, from entry-level roles to research and leadership positions.",
+    "pdfFile": "ai-career-pathways.pdf"
+  },
+  {
+    "id": "r10",
+    "title": "Emerging Technologies Guide",
+    "category": "career",
+    "description": "An overview of emerging technology fields — AI, quantum computing, biotechnology — and how to enter them.",
+    "pdfFile": "emerging-technologies-guide.pdf"
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "id": "a1",
+    "slug": "us-admissions",
+    "title": "U.S. Admissions",
+    "category": "U.S. Admissions",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does GPA stand for in U.S. universities?",
+        "options": ["Grade Point Average", "Graduate Programme Assessment", "General Performance Analysis", "Grade Performance Award"],
+        "correctIndex": 0
+      },
+      {
+        "id": "q2",
+        "question": "Which standardised test is commonly required for U.S. undergraduate admission?",
+        "options": ["IELTS", "GMAT", "SAT", "GRE"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q3",
+        "question": "What is the Common Application (Common App)?",
+        "options": ["A shared scholarship fund", "An online portal for applying to multiple U.S. colleges", "A visa application system", "A university housing application"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q4",
+        "question": "What is the typical length of a U.S. undergraduate programme?",
+        "options": ["2 years", "3 years", "4 years", "5 years"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q5",
+        "question": "What does FAFSA stand for?",
+        "options": ["Free Application for Federal Student Aid", "Financial Aid Funding for Study Abroad", "Federal Application for Scholarship Awards", "Foreign Aid for Student Administration"],
+        "correctIndex": 0
+      },
+      {
+        "id": "q6",
+        "question": "What is an 'Early Decision' application?",
+        "options": ["Applying in September", "A binding commitment to attend if accepted", "A non-binding early application", "An application submitted before October"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q7",
+        "question": "Which test measures English language proficiency for international students?",
+        "options": ["SAT", "ACT", "TOEFL", "GRE"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q8",
+        "question": "What is the purpose of a personal statement in a college application?",
+        "options": ["To describe your family background", "To showcase your personality, experiences, and goals", "To list your academic grades", "To provide teacher references"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q9",
+        "question": "What does 'need-blind admission' mean?",
+        "options": ["Students don't submit financial information", "Admission decisions are made without considering financial need", "Scholarships are awarded blindly", "Tuition is waived for all students"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q10",
+        "question": "Which organisation provides free advising for Nigerian students applying to U.S. universities?",
+        "options": ["WAEC", "JAMB", "EducationUSA", "NYSC"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "a2",
+    "slug": "scholarships",
+    "title": "Scholarships",
+    "category": "Scholarships",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the Fulbright Program?",
+        "options": ["A Nigerian government scholarship", "A U.S. government-funded international exchange programme", "A private technology scholarship", "A sports scholarship programme"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q2",
+        "question": "Which type of scholarship is awarded based on financial need?",
+        "options": ["Merit-based", "Need-based", "Athletic", "Community service"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q3",
+        "question": "What is the MasterCard Foundation Scholars Program primarily focused on?",
+        "options": ["Business leadership", "Tech innovation", "Supporting talented African students", "Sports excellence"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q4",
+        "question": "What does a 'full ride' scholarship cover?",
+        "options": ["Transportation to campus only", "Tuition, room, board, and fees", "Partial tuition coverage", "Books and supplies only"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q5",
+        "question": "Which website is a reliable resource for finding scholarships for international students?",
+        "options": ["Wikipedia", "Fastweb.com", "LinkedIn", "Twitter"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q6",
+        "question": "What is typically required in a scholarship application?",
+        "options": ["Passport photo only", "Essays, transcripts, and recommendation letters", "Social media handles", "Family income documents only"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q7",
+        "question": "When should you ideally start searching for scholarships?",
+        "options": ["After admission", "1 year before enrolment", "18–24 months before enrolment", "During your final year of school"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q8",
+        "question": "What does a scholarship essay typically ask you to demonstrate?",
+        "options": ["Mathematical ability", "Your values, goals, and potential", "Foreign language skills", "Sports achievements"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q9",
+        "question": "Can a student receive multiple scholarships simultaneously?",
+        "options": ["No, only one is allowed", "Yes, subject to each scholarship's terms", "Only scholarships in the same category", "Only for graduate programmes"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q10",
+        "question": "What is a renewable scholarship?",
+        "options": ["One that can be returned to the provider", "A scholarship that continues for multiple years if criteria are met", "A scholarship for environmental studies", "One that increases in value each year"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "a3",
+    "slug": "visa-preparation",
+    "title": "Visa Preparation",
+    "category": "Visa Preparation",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What visa type do international students need to study full-time in the U.S.?",
+        "options": ["B-1", "H-1B", "F-1", "J-2"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q2",
+        "question": "What is SEVIS?",
+        "options": ["A standardised test", "The Student and Exchange Visitor Information System", "A scholarship database", "A visa interview scoring system"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q3",
+        "question": "Where does an F-1 student visa interview take place?",
+        "options": ["The university campus", "The U.S. Embassy or Consulate", "An immigration office in Nigeria", "The airport on departure day"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q4",
+        "question": "Which document confirms your enrolment and authorises your F-1 visa application?",
+        "options": ["Passport", "I-20 form", "Transcript", "Bank statement"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q5",
+        "question": "How early can you enter the U.S. before your programme start date on an F-1 visa?",
+        "options": ["1 week", "14 days", "30 days", "60 days"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q6",
+        "question": "What is the SEVIS I-901 fee for F-1 students?",
+        "options": ["$50", "$100", "$350", "$500"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q7",
+        "question": "What does 'maintaining status' mean for F-1 students?",
+        "options": ["Keeping a GPA above 3.0", "Following all F-1 visa rules and regulations", "Renewing your passport annually", "Paying tuition on time"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q8",
+        "question": "Which is a common reason for visa denial?",
+        "options": ["Excellent academic record", "Strong financial ties to home country", "Unclear intent to return home after graduation", "Good English proficiency"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q9",
+        "question": "What is OPT in the context of F-1 student visas?",
+        "options": ["Optional Proficiency Test", "Optional Practical Training", "Official Permission Transfer", "Open Programme Training"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q10",
+        "question": "How long can STEM OPT extend your work authorisation in the U.S. after graduation?",
+        "options": ["6 months", "1 year", "2 years", "24 months"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "a4",
+    "slug": "ai-fundamentals",
+    "title": "AI Fundamentals",
+    "category": "AI Fundamentals",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does AI stand for?",
+        "options": ["Automated Intelligence", "Artificial Intelligence", "Advanced Integration", "Applied Imaging"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q2",
+        "question": "Which of the following is an example of machine learning?",
+        "options": ["A calculator performing arithmetic", "A spam filter that improves over time", "A calendar app", "A word processor"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q3",
+        "question": "What is a neural network modelled after?",
+        "options": ["Computer circuits", "The human brain", "Satellite systems", "Pure mathematical equations"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q4",
+        "question": "What does NLP stand for in AI?",
+        "options": ["Non-Linear Programming", "Natural Language Processing", "Neural Learning Protocol", "Network Layer Processing"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q5",
+        "question": "Which of the following is an application of AI?",
+        "options": ["Manual data entry", "Face recognition technology", "Paper filing systems", "Traditional calculators"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q6",
+        "question": "What is the primary purpose of a recommendation algorithm?",
+        "options": ["To recommend job openings only", "To suggest content based on user preferences", "To detect fraud", "To translate languages"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q7",
+        "question": "What type of AI can theoretically perform any intellectual task a human can?",
+        "options": ["Narrow AI", "General AI", "Reactive AI", "Limited Memory AI"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q8",
+        "question": "Which field combines AI with healthcare to improve diagnostics?",
+        "options": ["FinTech", "EdTech", "Health Informatics", "AgroTech"],
+        "correctIndex": 2
+      },
+      {
+        "id": "q9",
+        "question": "What is Python primarily used for in AI development?",
+        "options": ["Building websites", "Writing machine learning algorithms", "Managing databases", "Designing graphics"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q10",
+        "question": "What is data bias in AI?",
+        "options": ["When AI systems learn faster than expected", "When training data reflects human prejudices leading to unfair outcomes", "When AI cannot process large datasets", "A minor programming error in the model"],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

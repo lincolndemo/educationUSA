@@ -1,0 +1,42 @@
+[
+  {
+    "id": "t1",
+    "name": "Chioma Obi",
+    "state": "Anambra",
+    "university": "Massachusetts Institute of Technology",
+    "quote": "The EducationUSA scholars programme transformed my future. The step-by-step admissions support was unlike anything else available in Nigeria.",
+    "cohort": "2024 Scholar"
+  },
+  {
+    "id": "t2",
+    "name": "Emeka Nwosu",
+    "state": "Enugu",
+    "university": "Stanford University",
+    "quote": "I had no idea how to navigate U.S. applications. This programme gave me the tools, the mentorship, and the confidence to apply and succeed.",
+    "cohort": "2024 Scholar"
+  },
+  {
+    "id": "t3",
+    "name": "Fatima Aliyu",
+    "state": "Kano",
+    "university": "Carnegie Mellon University",
+    "quote": "As a girl from northern Nigeria, I never imagined studying AI in America. This programme made that dream real.",
+    "cohort": "2025 Scholar"
+  },
+  {
+    "id": "t4",
+    "name": "Tunde Adeyemi",
+    "state": "Ogun",
+    "university": "University of Michigan",
+    "quote": "The visa preparation resources were invaluable. I walked into my embassy interview with complete confidence and came out with my visa.",
+    "cohort": "2025 Scholar"
+  },
+  {
+    "id": "t5",
+    "name": "Ngozi Eze",
+    "state": "Rivers",
+    "university": "Georgia Institute of Technology",
+    "quote": "The scholarship search module alone saved me from giving up. I found three funding sources I would never have discovered on my own.",
+    "cohort": "2025 Scholar"
+  }
+]
