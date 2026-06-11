@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Download, ClipboardList, Clock, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
+import TutorChat from '@/components/tutor/TutorChat'
+import LessonProgressTracker from '@/components/lesson/LessonProgressTracker'
 
 const lessonData = lessons as Lesson[]
 const assessmentData = assessments as Assessment[]
@@ -54,9 +56,12 @@ export default async function LessonPage({ params }: Props) {
         <div className="mb-6">
           <Badge className="bg-blue-100 text-brand-blue border-0 mb-3">{categoryLabels[lesson.category]}</Badge>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">{lesson.title}</h1>
-          <div className="flex items-center gap-2 text-gray-500 text-sm">
-            <Clock className="w-4 h-4" />
-            <span>{lesson.duration}</span>
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex items-center gap-2 text-gray-500 text-sm">
+              <Clock className="w-4 h-4" />
+              <span>{lesson.duration}</span>
+            </div>
+            <LessonProgressTracker slug={slug} />
           </div>
         </div>
 
@@ -111,6 +116,8 @@ export default async function LessonPage({ params }: Props) {
           )}
         </div>
       </div>
+
+      <TutorChat lessonSlug={slug} lessonTitle={lesson.title} />
     </div>
   )
 }
