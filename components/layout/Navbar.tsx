@@ -1,10 +1,11 @@
 'use client'
 
+import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 
 const links = [
@@ -20,6 +21,8 @@ const links = [
 
 export default function Navbar() {
   const pathname = usePathname()
+  const [open, setOpen] = React.useState(false)
+  React.useEffect(() => { setOpen(false) }, [pathname])
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
@@ -57,7 +60,7 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Nav */}
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger
             render={
               <Button variant="ghost" size="icon" className="lg:hidden" />
@@ -66,6 +69,9 @@ export default function Navbar() {
             <Menu className="h-5 w-5" />
           </SheetTrigger>
           <SheetContent side="right" className="w-64">
+            <SheetHeader>
+              <SheetTitle className="sr-only">Main Navigation</SheetTitle>
+            </SheetHeader>
             <nav className="flex flex-col gap-1 mt-6">
               {links.map((link) => (
                 <Link
