@@ -25,18 +25,18 @@ export default function LearningPage() {
         </div>
 
         <div className="space-y-12">
-          {categories.map((cat) => {
+          {categories.map((cat, catIdx) => {
             const catLessons = data.filter((l) => l.category === cat.key)
             return (
-              <div key={cat.key}>
+              <div key={cat.key} className="animate-fade-up" style={{ animationDelay: `${catIdx * 60}ms` }}>
                 <div className="flex items-center gap-3 mb-5">
-                  <h2 className="text-xl font-bold text-gray-800">{cat.label}</h2>
+                  <h2 className="text-xl font-bold text-gray-900 pl-3 border-l-4 border-brand-blue">{cat.label}</h2>
                   <Badge className={cat.badgeClass}>{catLessons.length} lessons</Badge>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {catLessons.map((lesson) => (
                     <Link key={lesson.id} href={`/learning/${lesson.slug}`}>
-                      <Card className={`h-full border-t-4 ${cat.color} hover:shadow-md transition-shadow cursor-pointer`}>
+                      <Card className={`h-full border-t-4 ${cat.color} card-hover cursor-pointer`}>
                         <CardHeader>
                           <div className="flex items-start justify-between gap-2">
                             <CardTitle className="text-sm font-semibold text-gray-800 leading-snug">{lesson.title}</CardTitle>
